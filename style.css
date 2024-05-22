@@ -55,7 +55,7 @@ body {
 h1,h2,h3,h4,h5,h6, .person__title {
   font-family: "Source Serif 4", serif;
 font-optical-sizing: auto;
-font-weight: 600;
+font-weight: bold;
 font-style: normal;
 }
 
@@ -177,8 +177,8 @@ body > * + * {
 .product__card__head {
   display: flex;
   align-items: center;
-  justify-content: space-between
-  ;
+  justify-content: space-between;
+  font-weight: bold;
 }
 
 .product__card__btn {
