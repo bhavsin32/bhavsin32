@@ -52,7 +52,7 @@
     margin-right: auto;
   }
 
-  h1 {
+  h1,h2,h3,h4,h5,h6, .person__title {
     font-family: "Source Serif 4", serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -76,6 +76,7 @@
     font-weight: bold;
     font-size: 40px;
     margin-top: 16px;
+    line-height: 1;
   }
 
   .hero__description {
@@ -114,6 +115,10 @@ a {
 .btn__primary {
     background-color: #0D0C21;
     color: #fff;
+}
+
+.btn__primary:hover {
+    background-color: #565563;
 }
 
 .btn__secondary {
@@ -186,6 +191,10 @@ body > * + * {
     font-size: 18px;
 }
 
+.product__card__btn:hover {
+    background: #565563;
+}
+
 .product__card__head {
     font-size: 28px;
     font-family: "Source Serif 4", serif;
@@ -205,6 +214,7 @@ body > * + * {
 .title__hint {
     color: #A5B1C2;
     font-style: italic;
+    margin-top: 12px;
 }
 
 .trophy__icon {
@@ -234,6 +244,7 @@ body > * + * {
 .trophy__title {
     font-size: 24px;
     margin-top: 32px;
+    font-weight: 600;
 }
 
 .trophy__details {
@@ -246,6 +257,22 @@ body > * + * {
     padding: 32px;
     border-radius: 4px;
 }
+
+.testimony__body {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+
+    @supports (-webkit-line-clamp: 4) {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: initial;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    }
+  }
 
 .person__image {
     height: 45px;
@@ -300,7 +327,7 @@ body > * + * {
 
 .footer__icons {
     display: flex;
-    gap: 24px;
+    gap: 84px;
     align-items: center;
 
     margin-top: 64px;
@@ -315,7 +342,7 @@ hr {
     height:1px;
     background: #000;
     margin-top: 120px;
-    opacity: 0.1;
+    opacity: 0.2;
 }
 
 @media only screen and (max-width: 600px) {
@@ -347,4 +374,5 @@ hr {
     color: #A5B1C2;
     font-size: 16px;
     margin-top: 16px;
+    font-weight: bold;
 }
