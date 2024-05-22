@@ -116,6 +116,7 @@ a {
   background-color: #0D0C21;
   color: #fff;
   font-family: "Mukta", sans-serif;
+  border: 1px solid #0D0C21;
 }
 
 .btn__primary:hover {
