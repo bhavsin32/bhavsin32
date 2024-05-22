@@ -370,6 +370,10 @@ hr {
       text-align: center;
       gap: 12px;
   }
+
+  .footer__icons {
+    gap: 16px
+  }
 }
 
 .trophy__date {
