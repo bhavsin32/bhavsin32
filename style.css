@@ -1,3 +1,5 @@
+html { scroll-behavior: smooth; }
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -150,6 +152,7 @@ body > * + * {
 
 .product__card {
   border-radius: 12px;
+  box-sizing: border-box;
 }
 
 .product__card:nth-child(1) {
@@ -166,6 +169,22 @@ body > * + * {
 
 .product__card:nth-child(4) {
   background-color: #F5F6FA;
+}
+
+.product__card:nth-child(3) .product__card__image {
+  border-radius: unset;
+}
+
+.product__card:hover:nth-child(1) {
+  box-shadow: 0px 0px 1px 1px #958CFE;
+}
+
+.product__card:hover:nth-child(2) {
+  box-shadow: 0px 0px 1px 1px #EFA861;
+}
+
+.product__card:hover:nth-child(3) {
+  box-shadow: 0px 0px 1px 1px #52A6FB;
 }
 
 .product__card__head__container {
@@ -198,6 +217,15 @@ body > * + * {
   background: #565563;
 }
 
+.inprogress__card__btn {
+  color: #ffffff;
+  background-color: #C8D6E5;
+  font-size: 16px;
+  font-family: sans-serif;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
 .product__card__head {
   font-size: 28px;
   font-family: "Source Serif 4", serif;
@@ -212,6 +240,7 @@ font-style: normal;
 
 .product__card__image {
   padding-left: 24px;
+  border-bottom-right-radius: 12px;
 }
 
 .title__hint {
@@ -261,7 +290,7 @@ font-style: normal;
   border-radius: 4px;
 }
 
-.testimony__body {
+/* .testimony__body {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -275,7 +304,7 @@ font-style: normal;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
   }
-}
+} */
 
 .person__image {
   height: 45px;
@@ -383,3 +412,4 @@ hr {
   margin-top: 16px;
   font-weight: bold;
 }
+
